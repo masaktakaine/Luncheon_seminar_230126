@@ -34,7 +34,7 @@ run("ROI Manager...");
 roiManager("Show All");
 roiManager("Show All with labels");
 roiManager("reset");						// Reset ROI manager
-waitForUser("Add ROIs in the ROI manager. Use oval or polygon selection tool");
+waitForUser("Add ROIs in the ROI manager (press \"t\"). Use oval or polygon selection tool.");
 
 for(k=0; k<roiManager("count"); k++) {   // Activate and analyse a ROI one by one
 redirectImageTitle = "roi_"+ k+1;
