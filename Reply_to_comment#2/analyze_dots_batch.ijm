@@ -39,7 +39,8 @@ globalsd = getValue("StdDev raw");
 
 // The intensity threshold is determined as the mean intensity plus 3 times the standard deviation of the image.
 threshold = globalmean + 3*globalsd;
-setThreshold(threshold, 255, "raw");
+setThreshold(threshold, 255, "raw");  // for 8-bit image
+//setThreshold(threshold, 65535, "raw");  // for 16-bit image
 setOption("BlackBackground", true);
 run("Convert to Mask");
 resetThreshold();
