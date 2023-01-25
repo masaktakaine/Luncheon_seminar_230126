@@ -56,7 +56,7 @@ roiManager("Measure");
 
 selectWindow("Drawing of Mask");
 run("From ROI Manager");
-run("Hide Overlay");
+//run("Hide Overlay");
 saveAs("Tiff", dirDR + File.separator + "Drawing of " + title_s);
 close();
 
